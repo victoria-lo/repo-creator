@@ -1,0 +1,23 @@
+{
+  "name": "repo-create",
+  "version": "1.0.0",
+  "description": "Simple CLI app to automate GitHub repo initialization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victoria Lo",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^18.3.5",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "commander": "^7.2.0",
+    "configstore": "^5.0.1",
+    "figlet": "^1.5.0",
+    "glob": "^7.1.6",
+    "inquirer": "^8.0.0",
+    "simple-git": "^2.37.0"
+  },
+  "bin": "index.js"
+}
