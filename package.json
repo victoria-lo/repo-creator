@@ -1,12 +1,21 @@
 {
-  "name": "repo-create",
-  "version": "1.0.0",
+  "name": "@victoria-lo/repo-create",
+  "version": "1.0.1",
   "description": "Simple CLI app to automate GitHub repo initialization",
   "main": "index.js",
+  "keywords": [
+    "node",
+    "github",
+    "cli"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Victoria Lo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victoria-lo/repo-creator-CLI.git"
+  },
   "license": "ISC",
   "dependencies": {
     "@octokit/rest": "^18.3.5",
