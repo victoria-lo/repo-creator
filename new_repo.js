@@ -80,7 +80,7 @@ async function initialCommit(url) {
         .add('.gitignore')
         .add('./*')
         .commit('Initial commit')
-
+        .addRemote('origin', url)
         await git.push(url, 'master');
 
         return true;
