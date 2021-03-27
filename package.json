@@ -14,7 +14,7 @@
   "author": "Victoria Lo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/victoria-lo/repo-creator-CLI.git"
+    "url": "https://github.com/victoria-lo/repo-creator.git"
   },
   "license": "ISC",
   "dependencies": {

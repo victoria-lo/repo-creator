@@ -20,4 +20,4 @@ repo-create
 To learn how I built this tool, please visit https://lo-victoria.com
 
 ### Links
-Repo available at: https://github.com/victoria-lo/repo-creator-CLI
+Repo available at: https://github.com/victoria-lo/repo-creator
