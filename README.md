@@ -1,23 +1,26 @@
 ## Remote Github Repository Creator CLI
 ### Getting Started
-1. Installation
+#### 1. Installation
 ```
 npm install --global @victoria-lo/repo-create
 ```
-2. Create a Personal Access Token on Github
-Visit: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+#### 2. Create a Personal Access Token on Github
 
 Use this token to authenticate yourself when the tool prompts for it.
+
+Visit: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+
+
 ### Usage
-1. Initializes the tool
+#### 1. Initializes the tool
 ```
 repo-create init
 ```
-2. Deletes stored token
+#### 2. Deletes stored token
 ```
 repo-create token
 ```
-3. Display help
+#### 3. Display help
 ```
 repo-create
 ```
