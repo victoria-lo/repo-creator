@@ -55,7 +55,7 @@ async function ignoreFiles(){
     const files = glob.sync("**/*",{"ignore":'**/node_modules/**'});
 
     //ignore any node_modules by default
-    const filesToIgnore = glob.sync("**/node_modules");
+    const filesToIgnore = glob.sync('{*/node_modules/,node_modules/}');
     if(filesToIgnore.length){
         fs.writeFileSync('.gitignore', filesToIgnore.join('\n')+'\n');
     }else {
