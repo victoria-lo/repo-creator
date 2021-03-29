@@ -81,7 +81,7 @@ async function initialCommit(url) {
         .add('./*')
         .commit('Initial commit')
         .addRemote('origin', url)
-        await git.push(url, 'master');
+        await git.push(['-u'], url, 'master');
 
         return true;
     } catch (error) {
