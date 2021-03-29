@@ -58,6 +58,8 @@ async function ignoreFiles(){
     const filesToIgnore = glob.sync("**/node_modules");
     if(filesToIgnore.length){
         fs.writeFileSync('.gitignore', filesToIgnore.join('\n')+'\n');
+    }else {
+        fs.closeSync(fs.openSync('.gitignore', 'w'));
     }
     
     const question = [
@@ -72,9 +74,7 @@ async function ignoreFiles(){
     const answers = await inquirer.prompt(question);
     if (answers.ignore.length) {
         fs.appendFileSync('.gitignore',answers.ignore.join('\n'));
-    } else {
-        fs.closeSync(fs.openSync('.gitignore', 'w'));
-    }
+    } 
 }
 
 async function initialCommit(url) {
