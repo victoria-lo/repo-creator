@@ -28,4 +28,5 @@ repo-create
 To learn how I built this tool, please visit https://lo-victoria.com.
 
 ### Links
-Repo available at: https://github.com/victoria-lo/repo-creator
+- Repo available at: https://github.com/victoria-lo/repo-creator
+- npm package at: https://www.npmjs.com/package/@victoria-lo/repo-create
