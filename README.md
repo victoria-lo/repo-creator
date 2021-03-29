@@ -24,7 +24,7 @@ repo-create token
 ```
 repo-create
 ```
-### Tutorial
+### Tutorial (coming soon)
 To learn how I built this tool, please visit https://lo-victoria.com
 
 ### Links
