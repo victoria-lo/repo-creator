@@ -52,22 +52,26 @@ async function newRepo(octokit){
 
 async function ignoreFiles(){
 
-    const files = glob.sync("**/*",{"ignore":'node_modules/**/*'});
+    const files = glob.sync("**/*",{"ignore":'**/node_modules/**'});
 
+    //ignore any node_modules by default
+    const filesToIgnore = glob.sync("**/node_modules");
+    if(filesToIgnore.length){
+        fs.writeFileSync('.gitignore', filesToIgnore.join('\n')+'\n');
+    }
+    
     const question = [
         {
             type: 'checkbox',
             name: 'ignore',
             message: 'Select the file and/or folders you wish to ignore:',
-            choices: files,
-            default: ['node_modules']
+            choices: files
         }
     ];
 
     const answers = await inquirer.prompt(question);
-
     if (answers.ignore.length) {
-        fs.writeFileSync('.gitignore', answers.ignore.join('\n'));
+        fs.appendFileSync('.gitignore',answers.ignore.join('\n'));
     } else {
         fs.closeSync(fs.openSync('.gitignore', 'w'));
     }

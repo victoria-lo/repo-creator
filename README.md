@@ -25,7 +25,7 @@ repo-create token
 repo-create
 ```
 ### Tutorial (coming soon)
-To learn how I built this tool, please visit https://lo-victoria.com
+To learn how I built this tool, please visit https://lo-victoria.com.
 
 ### Links
 Repo available at: https://github.com/victoria-lo/repo-creator
