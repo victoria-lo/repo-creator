@@ -53,11 +53,15 @@ async function newRepo(octokit){
 async function ignoreFiles(){
 
     const files = glob.sync("**/*",{"ignore":'**/node_modules/**'});
+    const defaultIgnore = ['/build', '.env','.DS_Store','/coverage', '.env.local','.env.development.local',
+    '.env.test.local', '.env.production.local'];
+    
+    fs.writeFileSync('.gitignore', defaultIgnore.join('\n')+'\n');
 
     //ignore any node_modules by default
     const filesToIgnore = glob.sync('{*/node_modules/,node_modules/}');
     if(filesToIgnore.length){
-        fs.writeFileSync('.gitignore', filesToIgnore.join('\n')+'\n');
+        fs.appendFileSync('.gitignore', filesToIgnore.join('\n')+'\n');
     }else {
         fs.closeSync(fs.openSync('.gitignore', 'w'));
     }

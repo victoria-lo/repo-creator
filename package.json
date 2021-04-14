@@ -1,6 +1,6 @@
 {
   "name": "@victoria-lo/repo-create",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple CLI app to automate GitHub repo initialization",
   "main": "index.js",
   "keywords": [
