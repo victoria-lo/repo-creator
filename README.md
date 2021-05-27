@@ -24,8 +24,8 @@ repo-create token
 ```
 repo-create
 ```
-### Tutorial (coming soon)
-To learn how I built this tool, please visit https://lo-victoria.com.
+### Tutorial
+To learn how I built this tool, please visit https://lo-victoria.com/automate-github-build-a-cli-app-with-nodejs-1.
 
 ### Links
 - Repo available at: https://github.com/victoria-lo/repo-creator
